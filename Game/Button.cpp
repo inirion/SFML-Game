@@ -43,6 +43,8 @@ void Button::setTextLang(sf::String textLang)
 void Button::setButtonPos(sf::Vector2f pos)
 {
 	this->position = pos;
+	
+	
 }
 
 void Button::setButtonText(std::string text)
@@ -58,9 +60,8 @@ void Button::setButtonText(std::string text)
 
 void Button::setButtonSprite()
 {
-	this->buttonSprite.setTexture(Textures::get(S::texture_buttonHover));
-	this->buttonSprite.setOrigin(buttonSprite.getGlobalBounds().width / 2, buttonSprite.getGlobalBounds().height / 2);
-	this->buttonSprite.setPosition(position.x, position.y - buttonText.getCharacterSize() / 4);
+	hoverAnim.setPosition(sf::Vector2f(position.x, position.y - buttonText.getCharacterSize() / 4));
+	hoverAnim.getRect().setOrigin(sf::Vector2f(hoverAnim.getFrameDimension().x / 2, hoverAnim.getFrameDimension().y / 2));
 }
 
 void Button::setButtonClickable(bool clickable)
@@ -77,23 +78,25 @@ void Button::setButtonMvDirection(sf::String mvDir)
 void Button::update(sf::RenderWindow & rw)
 {
 	checkIfSelected(rw);
+	if(hovered && clickable) hoverAnim.update();
 	if (selected) {
 		std::cout << "viev to = " << mvDirection << std::endl;
 		Config::activeMV = mvDirection;
 	}
 	selected = false;
 	
+	
 }
 
 void Button::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
 	if (hovered && clickable) {
-		target.draw(buttonSprite, states);
+		target.draw(hoverAnim, states);
 	}
 	target.draw(buttonText, states);
 }
 
-Button::Button()
+Button::Button():hoverAnim(4, 1, S::texture_hoveranim, 80.0f)
 {
 	this->selected = false;
 	this->pressed = false;

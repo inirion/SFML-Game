@@ -12,8 +12,8 @@ void Textures::init(bool force) {
 		map.clear();
 		try {
 			map[S::texture_null];
-			map[S::texture_buttonHover].loadFromFile("img\\button\\buttonHoverNew.png");
-			map[S::texture_buttonHover].setSmooth(true);
+			map[S::texture_hoveranim].loadFromFile("img\\anim\\hoveranim.png");
+			map[S::texture_hoveranim].setSmooth(true);
 
 			inited = true;
 		}

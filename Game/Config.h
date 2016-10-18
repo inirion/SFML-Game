@@ -36,7 +36,7 @@ public:
 
 };
 
-#define CLOCKASSEC Conf::clock.getElapsedTime().asSeconds()
-#define CLOCKASMS Conf::clock.getElapsedTime().asMilliseconds()
+#define CLOCKASSEC Config::clock.getElapsedTime().asSeconds()
+#define CLOCKASMS Config::clock.getElapsedTime().asMilliseconds()
 
 

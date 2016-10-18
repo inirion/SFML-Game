@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Game.cpp" />
@@ -29,6 +30,7 @@
     <ClCompile Include="Textures.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Game.h" />

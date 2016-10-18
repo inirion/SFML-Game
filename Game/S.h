@@ -10,6 +10,7 @@ namespace S {
 	const char* const menu_newgame = "newgame";
 	const char* const menu_lang = "change_lang";
 	const char* const texture_buttonHover = "tex_hover";
+	const char* const texture_hoveranim = "tex_hoveranim";
 	const char* const lang_newgame = "lang_new-game";
 	const char* const lang_help = "lang_help";
 	const char* const lang_options = "lang_options";

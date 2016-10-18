@@ -12,6 +12,7 @@ int main() {
 	Textures::init();
 	Lang::init();
 	setlocale(LC_ALL, "");
+	
 	sf::RenderWindow window(sf::VideoMode(800,600), "SFML WORKS" /*,sf::Style::Fullscreen*/);
 	Menu menu;
 	while (window.isOpen()) {

@@ -1,9 +1,10 @@
 #pragma once
 #include <SFML\Graphics.hpp>
+#include "Animation.h"
 class Button : public sf::Drawable
 {
 private:
-	sf::Sprite buttonSprite;
+	Animation hoverAnim;
 	sf::Vector2f position;
 	sf::Text buttonText;
 	sf::Vector2f mousePressedPos;
