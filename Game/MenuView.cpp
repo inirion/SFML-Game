@@ -1,4 +1,5 @@
 #include "MenuView.h"
+#include "Lang.h"
 
 
 
@@ -19,6 +20,13 @@ void MenuView::draw(sf::RenderTarget & target, sf::RenderStates states) const
 void MenuView::addButton(Button b)
 {
 	mvbuttons.push_back(b);
+}
+
+void MenuView::updateButtonText()
+{
+	for (auto &button : mvbuttons) {
+		button.setButtonText(button.getTextLang());
+	}
 }
 
 MenuView::MenuView()

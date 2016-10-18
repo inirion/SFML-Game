@@ -2,7 +2,8 @@
 #include "Textures.h"
 #include "Config.h"
 #include <iostream>
-#include "S.h"
+
+#include "Lang.h"
 
 
 
@@ -34,6 +35,11 @@ void Button::checkIfSelected(sf::RenderWindow & rw)
 	else if(hovered && !sf::Mouse::isButtonPressed(sf::Mouse::Left)) checkEligible = true;
 }
 
+void Button::setTextLang(sf::String textLang)
+{
+	this->textLang = textLang;
+}
+
 void Button::setButtonPos(sf::Vector2f pos)
 {
 	this->position = pos;
@@ -41,7 +47,8 @@ void Button::setButtonPos(sf::Vector2f pos)
 
 void Button::setButtonText(std::string text)
 {
-	this->buttonText.setString(text);
+	wchar_t *a = l(text);
+	this->buttonText.setString(a);
 	this->buttonText.setFont(Config::fDJB);
 	this->buttonText.setCharacterSize(25);
 	this->buttonText.setColor(sf::Color::Red);

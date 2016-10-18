@@ -2,7 +2,8 @@
 #include "SFML\Graphics.hpp"
 #include "MenuView.h"
 #include "Config.h"
-#include "S.h"
+
+
 
 class Menu : public sf::Drawable
 {

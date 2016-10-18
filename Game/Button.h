@@ -16,9 +16,12 @@ private:
 	std::string mvDirection;
 	void hoverCheck(sf::RenderWindow &rw);
 	void checkIfSelected(sf::RenderWindow &rw);
+	sf::String textLang;
 
 public:
 
+	inline sf::String getTextLang() { return textLang; }
+	void setTextLang(sf::String);
 	void setButtonPos(sf::Vector2f pos);
 	void setButtonText(std::string text);
 	void setButtonSprite();

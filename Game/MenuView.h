@@ -10,6 +10,7 @@ public:
 	void update(sf::RenderWindow &rw);
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states)const;
 	void addButton(Button b);
+	void updateButtonText();
 	MenuView();
 	~MenuView();
 };
