@@ -29,6 +29,16 @@ Menu::Menu()
 	MenuView exit;
 	Button btn;
 	//mainMenu view
+	//Text 
+	btn.setButtonPos(sf::Vector2f(400, 100));
+	btn.setButtonText(S::text_mainmenu);
+	btn.setButtonClickable(false);
+	btn.setButtonSprite();
+	btn.setButtonMvDirection(S::menu_main);
+	btn.setTextLang(S::text_mainmenu);
+	mainMenu.addButton(btn);
+	//end Text
+	//Buttons
 	btn.setButtonPos(sf::Vector2f(400, 300));
 	btn.setButtonText(S::lang_newgame);
 	btn.setButtonClickable(true);
@@ -60,12 +70,14 @@ Menu::Menu()
 	btn.setButtonMvDirection(S::menu_exit);
 	btn.setTextLang(S::lang_exit);
 	mainMenu.addButton(btn);
-
+	//edn Buttons
 	mv[S::menu_main] = mainMenu;
 	selected = &mv[Config::activeMV];
+	
 	//end of manMenu view
 
 	//NewGame view
+	//Buttons
 	btn.setButtonPos(sf::Vector2f(400, 300));
 	btn.setButtonText(S::lang_test);
 	btn.setButtonClickable(true);
@@ -81,11 +93,13 @@ Menu::Menu()
 	btn.setButtonMvDirection(S::menu_main);
 	btn.setTextLang(S::lang_return);
 	newGame.addButton(btn);
+	//edn Buttons
 
 	mv[S::menu_newgame] = newGame;
 	//end of NewGame view
 
 	//Options view
+	//Buttons
 	btn.setButtonPos(sf::Vector2f(400, 300));
 	btn.setButtonText(S::lang_test);
 	btn.setButtonClickable(true);
@@ -101,11 +115,12 @@ Menu::Menu()
 	btn.setButtonMvDirection(S::menu_main);
 	btn.setTextLang(S::lang_return);
 	options.addButton(btn);
-
+	//edn Buttons
 	mv[S::menu_options] = options;
 	//end of Options view
 
 	//Help view
+	//Buttons
 	btn.setButtonPos(sf::Vector2f(400, 300));
 	btn.setButtonText(S::lang_test);
 	btn.setButtonClickable(true);
@@ -121,11 +136,12 @@ Menu::Menu()
 	btn.setButtonMvDirection(S::menu_main);
 	btn.setTextLang(S::lang_return);
 	help.addButton(btn);
-
+	//edn Buttons
 	mv[S::menu_help] = help;
 	//end of Help view
 
 	//Exit view
+	//Buttons
 	btn.setButtonPos(sf::Vector2f(400, 300));
 	btn.setButtonText(S::lang_yes);
 	btn.setButtonClickable(true);
@@ -141,7 +157,7 @@ Menu::Menu()
 	btn.setButtonMvDirection(S::menu_main);
 	btn.setTextLang(S::lang_no);
 	exit.addButton(btn);
-
+	//edn Buttons
 	mv[S::menu_exit] = exit;
 	//end of Exit view
 	
