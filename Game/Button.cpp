@@ -51,6 +51,7 @@ void Button::setButtonText(std::string text)
 {
 	wchar_t *a = l(text);
 	this->buttonText.setString(a);
+	delete a;
 	this->buttonText.setFont(Config::fDJB);
 	this->buttonText.setCharacterSize(25);
 	this->buttonText.setColor(sf::Color::Red);
