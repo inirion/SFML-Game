@@ -101,11 +101,11 @@ Menu::Menu()
 	//Options view
 	//Buttons
 	btn.setButtonPos(sf::Vector2f(400, 300));
-	btn.setButtonText(S::lang_test);
+	btn.setButtonText(S::lang_changelang);
 	btn.setButtonClickable(true);
 	btn.setButtonSprite();
 	btn.setButtonMvDirection(S::menu_lang);
-	btn.setTextLang(S::lang_test);
+	btn.setTextLang(S::lang_changelang);
 	options.addButton(btn);
 
 	btn.setButtonPos(sf::Vector2f(400, 350));

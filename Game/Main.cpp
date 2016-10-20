@@ -26,8 +26,9 @@ int main() {
 		}
 		if (Config::activeMV == S::menu_exit_yes) window.close();
 		window.clear();
-		window.draw(menu);
 		menu.update(window);
+		window.draw(menu);
+		
 		window.display();
 	}
 }

@@ -80,24 +80,25 @@ void Button::update(sf::RenderWindow & rw)
 {
 	checkIfSelected(rw);
 	if(hovered && clickable) hoverAnim.update();
+	if (!hovered) hoverAnim.setFrame(0);
+	
 	if (selected) {
 		std::cout << "viev to = " << mvDirection << std::endl;
 		Config::activeMV = mvDirection;
 	}
 	selected = false;
-	
-	
 }
 
 void Button::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
 	if (hovered && clickable) {
-		target.draw(hoverAnim, states);
+		hoverAnim.draw(target, states);
+		//target.draw(hoverAnim, states);
 	}
 	target.draw(buttonText, states);
 }
 
-Button::Button():hoverAnim(4, 1, S::texture_hoveranim, 80.0f)
+Button::Button():hoverAnim(4, 1, S::texture_hoveranim, 100.0f)
 {
 	this->selected = false;
 	this->pressed = false;

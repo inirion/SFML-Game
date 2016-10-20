@@ -20,5 +20,6 @@ namespace S {
 	const char* const lang_test = "lang_test";
 	const char* const lang_return = "lang_return";
 	const char* const text_mainmenu = "text_mainmenu";
+	const char* const lang_changelang = "lang_changelang";
 	
 }
