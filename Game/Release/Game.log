@@ -1,9 +1,26 @@
-﻿  Button.cpp
-Button.cpp(57): warning C4996: 'sf::Text::setColor': was declared deprecated
+﻿  Snake.cpp
+Snake.cpp(9): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+Snake.cpp(23): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+Snake.cpp(40): warning C4018: '<': signed/unsigned mismatch
+Snake.cpp(12): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\Game_Sfml\Game\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+Snake.cpp(26): warning C4996: 'sf::Text::setColor': was declared deprecated
+  D:\Game_Sfml\Game\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
+Snake.cpp(73): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Snake.cpp(96): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Snake.cpp(101): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Snake.cpp(109): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Snake.cpp(111): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Snake.cpp(118): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Snake.cpp(137): warning C4018: '<': signed/unsigned mismatch
+Snake.cpp(174): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+Snake.cpp(175): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+Snake.cpp(176): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+Snake.cpp(170): warning C4996: 'sf::Text::setColor': was declared deprecated
   D:\Game_Sfml\Game\SFML\include\SFML/Graphics/Text.hpp(177): note: see declaration of 'sf::Text::setColor'
   Generating code
-  1 of 809 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+  2 of 1415 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    27 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Game.vcxproj -> D:\Game_Sfml\Game\Release\Game.exe

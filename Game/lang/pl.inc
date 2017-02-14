@@ -1,6 +1,13 @@
 p="pl_";
 
-DB("lang_new-game","Nowa Gra")
+DB("lang_new_game","Nowa Gra")
+DB("game_start","Rozpocznij Grê")
+DB("lang_score","Wynik : ")
+DB("snake_start_text","Wciœnij spacjê aby rozpocz¹æ grê")
+DB("snake_gameover_text","Koniec Gry wciœnij spacjê aby spróbowaæ ponownie")
+DB("lang_continue","Kontynuuj Grê")
+DB("lang_pong_game","Gra Pong")
+DB("lang_snake_game","Gra Snake")
 DB("lang_help","Pomoc")
 DB("lang_options","Opcje")
 DB("lang_exit","Wyjœcie")

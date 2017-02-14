@@ -13,7 +13,7 @@ private:
 public:
 	void update(sf::RenderWindow &rw);
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states)const;
-	Menu();
+	Menu(sf::RenderWindow & rw);
 	~Menu();
 };
 

@@ -55,14 +55,14 @@ void Button::setButtonText(std::string text)
 	this->buttonText.setFont(Config::fDJB);
 	this->buttonText.setCharacterSize(25);
 	this->buttonText.setColor(sf::Color::Red);
-	this->buttonText.setOrigin(buttonText.getGlobalBounds().width / 2, buttonText.getGlobalBounds().height / 2);
+	this->buttonText.setOrigin(buttonText.getGlobalBounds().width / 2, buttonText.getGlobalBounds().height / 8);
 	this->buttonText.setPosition(position);
 }
 
 void Button::setButtonSprite()
 {
-	hoverAnim.setPosition(sf::Vector2f(position.x, position.y - buttonText.getCharacterSize() / 4));
-	hoverAnim.getRect().setOrigin(sf::Vector2f(hoverAnim.getFrameDimension().x / 2, hoverAnim.getFrameDimension().y / 2));
+	hoverAnim.setPosition(sf::Vector2f(position.x, position.y - buttonText.getCharacterSize() / 8));
+	hoverAnim.getRect().setOrigin(sf::Vector2f(hoverAnim.getFrameDimension().x / 2, hoverAnim.getFrameDimension().y / 8));
 }
 
 void Button::setButtonClickable(bool clickable)
@@ -93,7 +93,6 @@ void Button::draw(sf::RenderTarget & target, sf::RenderStates states) const
 {
 	if (hovered && clickable) {
 		hoverAnim.draw(target, states);
-		//target.draw(hoverAnim, states);
 	}
 	target.draw(buttonText, states);
 }

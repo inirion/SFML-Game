@@ -11,7 +11,7 @@ void Textures::init(bool force) {
 
 		map.clear();
 		try {
-			map[S::texture_null];
+			map[S::null];
 			map[S::texture_hoveranim].loadFromFile("img\\anim\\hoveranim.png");
 			map[S::texture_hoveranim].setSmooth(true);
 

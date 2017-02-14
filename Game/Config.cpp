@@ -16,7 +16,7 @@ float Config::dtime = 0.0f;
 
 bool Config::inited = false;
 bool Config::gameRun = false;
-bool Config::gamePause = true;
+bool Config::gamePause = false;
 bool Config::debugEnable = true;
 bool Config::windowFocused = false;
 
@@ -30,6 +30,5 @@ void Config::init() {
 	if (!inited) {
 		inited = true;
 		fDJB.loadFromFile("font/DJB.ttf");
-
 	}
 }
