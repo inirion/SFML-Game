@@ -68,6 +68,7 @@ void Snake::draw(sf::RenderTarget & target, sf::RenderStates states) const
 
 void Snake::reset(sf::RenderWindow & rw)
 {
+	points = 0;
 	snakeBody[0].resetMovePattern();
 	snakeBody.clear();
 	srand(time(NULL));
